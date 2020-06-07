@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/style.css">
+  <title>CSS Grid Fundamentals!</title>
+</head>
+
+<body>
+  <header>
+    <h1>CSS Grid Fundamentals!</h1>
+  </header>
+  <!-- Emmet Abreviation .item{$}*10 -->
+  <div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+    <div class="item">7</div>
+    <div class="item">8</div>
+    <div class="item">9</div>
+    <div class="item">10</div>
+  </div>
+  
+  <style>
+    .container{
+      display: grid;
+      grid-template-columns: 30% 30% auto;
+      grid-template-rows: 100px 50px 200px 80px;
+      gap: 20px;
+    }
+
+    h1{
+      text-align: center;
+      border-bottom: 2px solid var(--black);
+    }
+
+    header{
+      margin-bottom: 30px;
+    }
+  </style>
+</body>
+
+</html>
