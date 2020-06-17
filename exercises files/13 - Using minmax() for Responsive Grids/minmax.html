@@ -21,9 +21,15 @@
       display: grid;
       grid-gap: 20px;
       border: 10px solid var(--yellow);
-      /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
-      grid-template-columns: fit-content(100px) 150px 150px 150px;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      /* grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); */
+      /* grid-template-columns: fit-content(100px) 150px 150px 150px; */
     }
+    /*
+      The minmax() CSS function defines a size range greater than
+      or equal to min and less than or equal to max. It is used with CSS Grids.
+      MDN :https://developer.mozilla.org/en-US/docs/Web/CSS/minmax
+    */
   </style>
 </body>
 

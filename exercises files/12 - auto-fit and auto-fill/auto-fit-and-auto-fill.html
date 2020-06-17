@@ -21,12 +21,21 @@
       display: grid;
       grid-gap: 20px;
       border: 10px solid var(--yellow);
-      grid-template-columns: repeat(auto-fit, 150px);
+      grid-template-columns: repeat(auto-fill, 100px);
     }
 
     .item4 {
       grid-column-end: -1;
     }
+
+    /*
+      auto-fit - adjust the items
+      on the container without
+      create extra grid item space;
+
+      auto-fill - fill the grid container with 
+      blank grid item space(a blank column).
+    */
   </style>
 </body>
 
